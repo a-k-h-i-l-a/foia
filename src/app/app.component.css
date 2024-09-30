@@ -1,0 +1,106 @@
+.tableStructure {
+    height: 30rem;
+    overflow: auto;
+    margin-bottom: 0px !important;
+}
+
+.card {
+    background: #ffffff;
+    box-shadow: 0px 20px 27px rgba(0, 0, 0, 0.05) !important;
+    border-radius: 16px !important;
+    padding: 16px;
+    border: none !important;
+
+}
+
+.card-title {
+    font-weight: 600;
+    font-size: 16px;
+    font-family: "Open Sans" !important;
+    line-height: 22px;
+    letter-spacing: -0.442553px;
+    color: #252f40;
+}
+
+
+.drawer {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 300px;
+    height: 100%;
+    background-color: white;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+    transition: right 0.3s ease;
+}
+
+.drawer.open {
+    right: 0;
+}
+
+.drawer-content {
+    padding: 20px;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.profile-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.profile-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.profile-image {
+    width: 100px;
+    height: 130px;
+    border-radius: 70%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+
+.form-control {
+    border-radius: 6px !important;
+
+    &:focus {
+        border: 1px solid #00b3ec !important;
+        box-shadow: 0px 0px 0px 2px rgba(147, 190, 226, 0.5) !important;
+    }
+
+    .is-invalid {
+        border: 1px soild red;
+    }
+}
+
+.navbar {
+    background-color: grey;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.navbar h1 {
+    color: white;
+    margin: 0;
+}
+
+.navbar-right p {
+    margin: 0;
+    font-size: 16px;
+}
